@@ -8,6 +8,22 @@
   <link rel="stylesheet" href="assets/css/theme.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="icon" href="img/logo.svg" type="image/svg+xml" />
+  <link rel="manifest" href="assets/manifest.webmanifest" />
+  <meta name="theme-color" content="#3a7afe" />
+  <!-- GA4 solo en producción -->
+  <script>
+  (function(){
+    const prod=["redesseguras.com.ar","www.redesseguras.com.ar"];
+    if(prod.includes(location.hostname)){
+      const s=document.createElement('script');s.async=true;
+      s.src='https://www.googletagmanager.com/gtag/js?id=G-H3CKV3WTS3';
+      document.head.appendChild(s);
+      window.dataLayer=window.dataLayer||[];
+      function gtag(){dataLayer.push(arguments)} window.gtag=gtag;
+      gtag('js', new Date()); gtag('config','G-H3CKV3WTS3');
+    }
+  })();
+  </script>
 </head>
 <body>
   <div class="topbar"><div class="container topbar-inner"><a class="tel" href="tel:+541170292195">📞 +54 11 7029-2195</a><a class="wa" href="https://wa.me/541170292195" target="_blank" rel="noopener">WhatsApp</a><span class="loc">📍 Vicente López (AMBA)</span></div></div>
