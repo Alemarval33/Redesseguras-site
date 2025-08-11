@@ -6,6 +6,22 @@
   <title>Página no encontrada | Redes Seguras</title>
   <link rel="stylesheet" href="assets/css/theme.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="manifest" href="assets/manifest.webmanifest" />
+  <meta name="theme-color" content="#3a7afe" />
+  <!-- GA4 solo en producción -->
+  <script>
+  (function(){
+    const prod=["redesseguras.com.ar","www.redesseguras.com.ar"];
+    if(prod.includes(location.hostname)){
+      const s=document.createElement('script');s.async=true;
+      s.src='https://www.googletagmanager.com/gtag/js?id=G-H3CKV3WTS3';
+      document.head.appendChild(s);
+      window.dataLayer=window.dataLayer||[];
+      function gtag(){dataLayer.push(arguments)} window.gtag=gtag;
+      gtag('js', new Date()); gtag('config','G-H3CKV3WTS3');
+    }
+  })();
+  </script>
 </head>
 <body>
   <section class="section">
