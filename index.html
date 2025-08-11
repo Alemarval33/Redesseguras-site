@@ -1,149 +1,205 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-AR">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Redes Seguras | Soluciones de Redes y Seguridad IT</title>
-  <meta name="description" content="Instalación y mantenimiento de redes, WiFi empresarial, cableado estructurado, firewalls, cámaras y soporte IT. Cotizá hoy mismo." />
+  <title>Redes Seguras | WiFi Empresarial, Cableado, Firewalls y CCTV</title>
+  <meta name="description" content="Diseño e instalación de redes confiables: WiFi empresarial, cableado estructurado, firewalls, VPN y cámaras IP. Respuesta rápida y soporte 24/7." />
+
+  <!-- Fuente -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
   <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="icon" href="/img/favicon.png" />
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml" />
 
-  <!-- Open Graph / SEO -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Redes Seguras" />
-  <meta property="og:description" content="Instalación y mantenimiento de redes, WiFi empresarial, cableado estructurado, firewalls, cámaras y soporte IT." />
+  <meta property="og:description" content="Soluciones profesionales en redes y seguridad IT." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://TU_USUARIO.github.io/REPO/img/og-image.jpg" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=1200&q=80&auto=format" />
 
-  <!-- Datos estructurados básicos -->
+  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Redes Seguras",
     "url": "https://redesseguras.com.ar",
-    "description": "Soluciones profesionales en redes y seguridad IT.",
+    "description": "Soluciones profesionales en redes y seguridad IT: WiFi, cableado, firewalls, CCTV y soporte 24/7.",
     "areaServed": "Argentina",
-    "telephone": "+54 9 11 0000-0000"
+    "telephone": "+54 11 7029-2195",
+    "sameAs": ["https://wa.me/541170292195"],
+    "serviceType": ["WiFi empresarial", "Cableado estructurado", "Firewalls y VPN", "CCTV"],
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80&auto=format"
   }
   </script>
 </head>
 <body>
-  <!-- Header / Nav -->
+  <!-- Header -->
   <header class="site-header">
     <div class="container nav">
-      <a href="#" class="brand">
+      <a href="#" class="brand" aria-label="Redes Seguras – inicio">
         <img src="img/logo.svg" alt="Redes Seguras" class="logo" />
         <span>Redes Seguras</span>
       </a>
       <nav id="mainNav" class="menu">
         <a href="#servicios">Servicios</a>
-        <a href="#por-que">¿Por qué nosotros?</a>
-        <a href="#casos">Casos</a>
-        <a href="#contacto">Contacto</a>
-        <a href="#contacto" class="btn btn-sm">Solicitar presupuesto</a>
+        <a href="#proceso">Cómo trabajamos</a>
+        <a href="#casos">Resultados</a>
+        <a href="#galeria">Galería</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto" class="btn btn-sm">Cotizar ahora</a>
       </nav>
-      <button class="hamburger" aria-label="Abrir menú" id="btnMenu">☰</button>
+      <button class="hamburger" aria-label="Abrir menú" id="btnMenu" aria-expanded="false">☰</button>
     </div>
   </header>
 
   <!-- Hero -->
   <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=1600&q=80&auto=format" alt="" />
+      <div class="hero-gradient"></div>
+    </div>
     <div class="container hero-inner">
       <div class="hero-copy">
-        <h1>Redes confiables, negocios sin interrupciones</h1>
-        <p>Diseñamos, instalamos y aseguramos tu infraestructura de red: WiFi empresarial, cableado estructurado, firewalls, CCTV y soporte IT.</p>
+        <h1 class="grad-text">Redes confiables, <br />negocios sin interrupciones</h1>
+        <p>Diseñamos, instalamos y aseguramos tu infraestructura: WiFi empresarial, cableado certificado, firewalls & VPN, CCTV y soporte 24/7.</p>
         <div class="cta-group">
-          <a class="btn btn-primary" href="#contacto">Pedir cotización</a>
-          <a class="btn btn-outline" href="https://wa.me/5491100000000?text=Hola%20quiero%20una%20cotizaci%C3%B3n%20para%20mi%20red" target="_blank" rel="noopener">WhatsApp directo</a>
+          <a class="btn btn-primary" href="#contacto">Solicitar presupuesto</a>
+          <a class="btn btn-outline" href="https://wa.me/541170292195?text=Hola%2C%20quisiera%20cotizar%20mi%20red" target="_blank" rel="noopener">WhatsApp directo</a>
         </div>
-        <div class="trust">
-          <span class="kpi"><strong>20+</strong> años de experiencia</span>
-          <span class="kpi"><strong>100%</strong> proyectos a medida</span>
-          <span class="kpi"><strong>24/7</strong> soporte crítico</span>
-        </div>
-      </div>
-      <div class="hero-media">
-        <img src="img/hero-network.jpg" alt="Instalación de redes y cableado" />
+        <ul class="trustbar">
+          <li><span class="badge">20+ años</span> experiencia</li>
+          <li><span class="badge">SLA</span> soporte 24/7</li>
+          <li><span class="badge">ISO‑like</span> buenas prácticas</li>
+        </ul>
       </div>
     </div>
+    <div class="wave" aria-hidden="true"></div>
   </section>
 
   <!-- Servicios -->
   <section id="servicios" class="section">
     <div class="container">
-      <h2 class="section-title">Servicios</h2>
+      <h2 class="section-title">Servicios clave</h2>
       <div class="grid cards-3">
-        <article class="card">
+        <article class="card reveal">
+          <div class="icon">🧩</div>
           <h3>Cableado estructurado</h3>
-          <p>Planificación, tendido y certificación de cableado Cat6/Cat6A. Racks, patch panels y ordenamiento.</p>
+          <p>Planificación, tendido y certificación Cat6/Cat6A. Racks, patch panels y orden estandarizado.</p>
         </article>
-        <article class="card">
+        <article class="card reveal">
+          <div class="icon">📶</div>
           <h3>WiFi empresarial</h3>
-          <p>Diseño de coberturas, control de invitados, roaming y segmentación segura para oficinas y locales.</p>
+          <p>Diseño de cobertura, roaming, redes de invitados, QoS y segmentación segura por VLAN.</p>
         </article>
-        <article class="card">
+        <article class="card reveal">
+          <div class="icon">🛡️</div>
           <h3>Firewalls & VPN</h3>
-          <p>Implementación de UTM, políticas de acceso, VPN site‑to‑site y acceso remoto seguro.</p>
+          <p>UTM, políticas de acceso, IDS/IPS y VPN site‑to‑site o acceso remoto seguro.</p>
         </article>
-        <article class="card">
+        <article class="card reveal">
+          <div class="icon">🎥</div>
           <h3>CCTV y cámaras IP</h3>
-          <p>Instalación y monitoreo de cámaras IP, grabación en red y acceso móvil.</p>
+          <p>Instalación, grabación en red y acceso móvil. Integración con almacenamiento seguro.</p>
         </article>
-        <article class="card">
+        <article class="card reveal">
+          <div class="icon">📈</div>
           <h3>Monitoreo & soporte</h3>
-          <p>Supervisión proactiva, alertas, mantenimiento preventivo y soporte 24/7.</p>
+          <p>Supervisión proactiva, alertas, mantenimiento y respuesta prioritaria ante incidentes.</p>
         </article>
-        <article class="card">
+        <article class="card reveal">
+          <div class="icon">🧭</div>
           <h3>Consultoría IT</h3>
-          <p>Relevamientos de red, auditorías de seguridad y planes de mejora escalables.</p>
+          <p>Relevamientos, auditorías de seguridad y roadmaps de mejora escalables.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Por qué elegirnos -->
-  <section id="por-que" class="section alt">
+  <!-- Proceso -->
+  <section id="proceso" class="section alt">
     <div class="container">
-      <h2 class="section-title">¿Por qué elegir Redes Seguras?</h2>
-      <ul class="bullets">
-        <li><strong>Experiencia comprobada:</strong> más de 20 años en proyectos de distinta escala.</li>
-        <li><strong>Seguridad primero:</strong> buenas prácticas, segmentación y políticas claras.</li>
-        <li><strong>Entrega rápida:</strong> ejecución ordenada para minimizar tiempos fuera de servicio.</li>
-        <li><strong>Postventa real:</strong> monitoreo, documentación y soporte continuo.</li>
-      </ul>
+      <h2 class="section-title">Cómo trabajamos</h2>
+      <div class="grid steps-4">
+        <div class="step reveal"><span class="num">1</span><h4>Relevamiento</h4><p>Visita técnica y diagnóstico de cobertura, cableado y seguridad.</p></div>
+        <div class="step reveal"><span class="num">2</span><h4>Diseño</h4><p>Topología, dimensionamiento y plan de ejecución sin frenar tu operación.</p></div>
+        <div class="step reveal"><span class="num">3</span><h4>Implementación</h4><p>Instalación ordenada, etiquetado y documentación de cada cambio.</p></div>
+        <div class="step reveal"><span class="num">4</span><h4>Postventa</h4><p>Monitoreo, soporte y mejoras continuas con métricas de disponibilidad.</p></div>
+      </div>
     </div>
   </section>
 
-  <!-- Casos / Clientes -->
+  <!-- Resultados / Casos -->
   <section id="casos" class="section">
     <div class="container">
-      <h2 class="section-title">Casos y resultados</h2>
+      <h2 class="section-title">Resultados que importan</h2>
       <div class="grid cards-3">
-        <article class="case">
+        <article class="case reveal">
           <h3>Retail multi‑sucursal</h3>
-          <p>Rediseño WiFi con roaming y VLANs. <em>+65% estabilidad</em> y <em>‑40% tickets</em> por caídas.</p>
+          <p>Rediseño WiFi con roaming y VLAN. <em>+65% estabilidad</em> y <em>‑40% tickets</em> por caídas.</p>
         </article>
-        <article class="case">
+        <article class="case reveal">
           <h3>PyME logística</h3>
-          <p>VPN site‑to‑site y firewall UTM. <em>Accesos seguros</em> y <em>control de tráfico</em>.</p>
+          <p>VPN site‑to‑site y UTM. <em>Accesos seguros</em> y <em>control de tráfico</em> por perfiles.</p>
         </article>
-        <article class="case">
+        <article class="case reveal">
           <h3>Oficina médica</h3>
-          <p>Segmentación red invitados/pacientes y CCTV IP. <em>Mejor privacidad</em> y <em>auditoría</em>.</p>
+          <p>Segmentación de red y CCTV IP. <em>Más privacidad</em> y <em>auditoría</em> de accesos.</p>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería -->
+  <section id="galeria" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Galería de trabajos</h2>
+      <div class="grid gallery-3">
+        <img class="gallery reveal" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=900&q=80&auto=format" alt="Rack de servidores" />
+        <img class="gallery reveal" src="https://images.unsplash.com/photo-1587202372616-b43abea06f3b?w=900&q=80&auto=format" alt="Cableado organizado" />
+        <img class="gallery reveal" src="https://images.unsplash.com/photo-1587202372775-98927b1f9b5b?w=900&q=80&auto=format" alt="Firewall y equipo de red" />
+        <img class="gallery reveal" src="https://images.unsplash.com/photo-1596457223691-8713f70f0b12?w=900&q=80&auto=format" alt="Access point WiFi" />
+        <img class="gallery reveal" src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=900&q=80&auto=format" alt="Fibra óptica" />
+        <img class="gallery reveal" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80&auto=format" alt="Equipo técnico" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+      <div class="grid cards-3">
+        <blockquote class="quote reveal">“Desde que migraron nuestra red, no tuvimos más caídas. Atención rápida y soluciones claras.”<cite>— Laura, Retail</cite></blockquote>
+        <blockquote class="quote reveal">“La VPN entre plantas funciona perfecto. Pudimos auditar accesos y mejorar la seguridad.”<cite>— Martín, Logística</cite></blockquote>
+        <blockquote class="quote reveal">“WiFi con cobertura total en consultorios y red de invitados separada. Excelente trabajo.”<cite>— Dra. García, Salud</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Preguntas frecuentes</h2>
+      <div class="faq">
+        <details class="reveal"><summary>¿Pueden trabajar fuera del horario laboral?</summary><p>Sí, coordinamos ventanas de mantenimiento para no impactar tu operación.</p></details>
+        <details class="reveal"><summary>¿Entregan documentación?</summary><p>Incluimos topología, inventario, contraseñas seguras y recomendaciones.</p></details>
+        <details class="reveal"><summary>¿Atienden varias sedes?</summary><p>Sí, diseñamos redes multi‑sitio con VPN y políticas centralizadas.</p></details>
+        <details class="reveal"><summary>¿Ofrecen soporte 24/7?</summary><p>Sí, con SLA y escalamiento según prioridad.</p></details>
       </div>
     </div>
   </section>
 
   <!-- Contacto -->
-  <section id="contacto" class="section alt">
+  <section id="contacto" class="section">
     <div class="container">
       <h2 class="section-title">Contacto</h2>
       <p>Contanos qué necesitás y te respondemos hoy.</p>
-      <!-- Opción A: Formspree (reemplazar YOUR_FORM_ID) -->
+      <!-- Formspree opcional: reemplazá YOUR_FORM_ID si querés usarlo -->
       <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <div class="grid form-grid">
           <label>
@@ -156,7 +212,7 @@
           </label>
           <label>
             Teléfono
-            <input type="tel" name="phone" placeholder="11 5555-5555" />
+            <input type="tel" name="phone" placeholder="11 7029‑2195" />
           </label>
           <label class="full">
             ¿En qué podemos ayudarte?
@@ -168,25 +224,26 @@
       </form>
 
       <div class="contact-extra">
-        <a class="whatsapp" href="https://wa.me/5491100000000?text=Hola%20quiero%20una%20cotizaci%C3%B3n%20para%20mi%20red" target="_blank" rel="noopener">WhatsApp instantáneo</a>
+        <a class="whatsapp" href="https://wa.me/541170292195?text=Hola%2C%20quisiera%20cotizar%20mi%20red" target="_blank" rel="noopener">WhatsApp: +54 11 7029‑2195</a>
         <a class="mailto" href="mailto:contacto@redesseguras.com.ar">contacto@redesseguras.com.ar</a>
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Redes Seguras. Todos los derechos reservados.</p>
+      <p>© <span id="year"></span> Redes Seguras. Argentina. Todos los derechos reservados.</p>
       <nav class="footer-nav">
         <a href="#servicios">Servicios</a>
-        <a href="#por-que">Por qué nosotros</a>
+        <a href="#proceso">Cómo trabajamos</a>
         <a href="#contacto">Contacto</a>
       </nav>
     </div>
   </footer>
 
-  <!-- Botón flotante WhatsApp -->
-  <a class="wa-fab" href="https://wa.me/5491100000000?text=Hola%20quiero%20una%20cotizaci%C3%B3n%20para%20mi%20red" target="_blank" rel="noopener" aria-label="WhatsApp"></a>
+  <!-- WhatsApp FAB -->
+  <a class="wa-fab" href="https://wa.me/541170292195?text=Hola%2C%20quisiera%20cotizar%20mi%20red" target="_blank" rel="noopener" aria-label="WhatsApp"></a>
 
   <script src="assets/js/main.js"></script>
 </body>
