@@ -8,13 +8,35 @@
   <link rel="stylesheet" href="assets/css/theme.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="icon" href="img/logo.svg" type="image/svg+xml" />
+  <link rel="manifest" href="assets/manifest.webmanifest" />
+  <meta name="theme-color" content="#3a7afe" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Inicio","item":"https://redesseguras.com.ar/"},
+    {"@type":"ListItem","position":2,"name":"Servicios","item":"https://redesseguras.com.ar/servicios.html"}
+  ]}
+  </script>
+  <!-- GA4 solo en producción -->
+  <script>
+  (function(){
+    const prod=["redesseguras.com.ar","www.redesseguras.com.ar"];
+    if(prod.includes(location.hostname)){
+      const s=document.createElement('script');s.async=true;
+      s.src='https://www.googletagmanager.com/gtag/js?id=G-H3CKV3WTS3';
+      document.head.appendChild(s);
+      window.dataLayer=window.dataLayer||[];
+      function gtag(){dataLayer.push(arguments)} window.gtag=gtag;
+      gtag('js', new Date()); gtag('config','G-H3CKV3WTS3');
+    }
+  })();
+  </script>
 </head>
 <body>
   <div class="topbar"><div class="container topbar-inner"><a class="tel" href="tel:+541170292195">📞 +54 11 7029-2195</a><a class="wa" href="https://wa.me/541170292195" target="_blank" rel="noopener">WhatsApp</a><span class="loc">📍 Vicente López (AMBA)</span></div></div>
   <header class="site-header">
     <div class="container nav">
       <a href="index.html" class="brand"><img src="img/logo.svg" alt="Redes Seguras" class="logo" /><span>Redes Seguras</span></a>
-      <nav id="mainNav" class="menu"><a href="servicios.html" aria-current="page">Servicios</a><a href="nosotros.html">Nosotros</a><a href="contacto.html" class="btn btn-sm">Contacto</a></nav>
+      <nav id="mainNav" class="menu"><a href="servicios.html" aria-current="page">Servicios</a><a href="nosotros.html">Nosotros</a><a href="galeria.html">Galería</a><a href="contacto.html" class="btn btn-sm">Contacto</a></nav>
       <button class="hamburger" id="btnMenu" aria-expanded="false">☰</button>
     </div>
   </header>
@@ -25,9 +47,9 @@
       <div class="grid cards-3">
         <article class="card reveal"><h3>WiFi empresarial</h3><p>Diseño de cobertura, mapas de calor, roaming, invitados y segmentación por VLAN. Optimización para voz, videoconferencia y POS.</p></article>
         <article class="card reveal"><h3>Cableado estructurado</h3><p>Cat6/Cat6A, certificación de enlaces, racks, patch panels y cable management. Orden y escalabilidad.</p></article>
-        <article class="card reveal"><h3>Firewalls & VPN</h3><p>UTM, control de accesos por perfiles, IDS/IPS, VPN site‑to‑site y remoto con MFA.</p></article>
+        <article class="card reveal"><h3>Firewalls & VPN</h3><p>UTM, control de accesos por perfiles, IDS/IPS, VPN site-to-site y remoto con MFA.</p></article>
         <article class="card reveal"><h3>CCTV y cámaras IP</h3><p>Grabación en red, acceso móvil y retención acorde a políticas internas. Integración con tu red.</p></article>
-        <article class="card reveal"><h3>Monitoreo & soporte</h3><p>Alertas proactivas, mantenimiento y SLA con tiempos de respuesta garantidos.</p></article>
+        <article class="card reveal"><h3>Monitoreo & soporte</h3><p>Alertas proactivas, mantenimiento y SLA con tiempos de respuesta garantizados.</p></article>
         <article class="card reveal"><h3>Consultoría IT</h3><p>Relevamientos, auditorías de seguridad y roadmaps de mejora priorizados.</p></article>
       </div>
       <div class="cta-center"><a class="btn btn-primary" href="https://wa.me/541170292195" target="_blank" rel="noopener">Cotizar por WhatsApp</a> <a class="btn btn-outline" href="tel:+541170292195">Llamar ahora</a></div>
