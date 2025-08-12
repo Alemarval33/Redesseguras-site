@@ -1,9 +1,8 @@
-/* Redes Seguras — THEME (solo CSS) */
+/* Redes Seguras – THEME VARIABLES & BASE */
+
 :root{
-  /* Tipografía */
   --font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 
-  /* Colores */
   --text: #e7ebf6;
   --muted: rgba(255,255,255,.72);
   --white: #ffffff;
@@ -11,16 +10,13 @@
   --brand-2: #00e395;
   --brand-3: #8a63d2;
 
-  /* Superficie */
   --border: rgba(255,255,255,.08);
   --card: rgba(255,255,255,.04);
 
-  /* Radios y espaciados */
   --radius: 14px;
   --sp-2: 12px;
 }
 
-/* Base tipográfica */
 html{scroll-behavior:smooth}
 body{font-family:var(--font-family); color:var(--text)}
 h1,h2,h3,h4,h5,h6{margin:0 0 .5rem; line-height:1.15}
@@ -31,11 +27,11 @@ p{margin:.5rem 0 1rem; color:var(--muted)}
 a{color:var(--text); text-decoration:none}
 a:hover{color:var(--white)}
 
-/* Utilidades */
 .img-fluid{max-width:100%; height:auto}
 .rounded{border-radius:var(--radius)}
 .text-center{text-align:center}
 .hide{display:none !important}
 
-/* Fallback mínimo */
-@media all{ body{background-color:#0a1123} }
+@media all{
+  body{background-color:#0a1123}
+}
