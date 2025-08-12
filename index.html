@@ -6,41 +6,41 @@
   <title>Redes Seguras | Redes, WiFi, Firewalls y CCTV en AMBA</title>
   <meta name="description" content="Redes Seguras: diseño e instalación de redes, WiFi empresarial, firewalls, VPN y CCTV. Servicio profesional para pymes en AMBA. Consultá por WhatsApp: +54 11 7029-2195." />
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://www.tu-dominio.com/" />
+  <!-- Canonical (ajustalo a tu URL final si usás dominio propio) -->
+  <link rel="canonical" href="https://alemarval33.github.io/Redesseguras-site/" />
 
   <!-- Open Graph / Social -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Redes Seguras | Redes, WiFi, Firewalls y CCTV en AMBA" />
   <meta property="og:description" content="Diseño e instalación de redes, WiFi empresarial, firewalls, VPN y CCTV. Atención a pymes en AMBA." />
-  <meta property="og:url" content="https://www.tu-dominio.com/" />
-  <meta property="og:image" content="https://www.tu-dominio.com/static/img/og-image.jpg" />
+  <meta property="og:url" content="https://alemarval33.github.io/Redesseguras-site/" />
+  <meta property="og:image" content="static/img/og-image.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Favicon / Manifest -->
-  <link rel="icon" href="/static/favicon.ico">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" href="static/favicon.ico">
+  <link rel="manifest" href="site.webmanifest">
 
-  <!-- Fuentes (seria y legible) -->
+  <!-- Fuente -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
-  <link href="/static/css/styles.css" rel="stylesheet">
+  <!-- CSS (RUTA RELATIVA) -->
+  <link href="static/css/styles.css" rel="stylesheet">
 
   <!-- Robots -->
   <meta name="robots" content="index,follow" />
   <meta name="theme-color" content="#0a2a4a" />
   <meta name="color-scheme" content="light dark" />
 
-  <!-- FAQ + LocalBusiness para SEO e IA -->
+  <!-- Schema: LocalBusiness + FAQ -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"LocalBusiness",
     "name":"Redes Seguras",
-    "image":"https://www.tu-dominio.com/static/img/og-image.jpg",
-    "url":"https://www.tu-dominio.com/",
+    "image":"static/img/og-image.jpg",
+    "url":"https://alemarval33.github.io/Redesseguras-site/",
     "telephone":"+54 11 7029-2195",
     "priceRange":"$$",
     "address":{
@@ -58,21 +58,9 @@
     "@context":"https://schema.org",
     "@type":"FAQPage",
     "mainEntity":[
-      {
-        "@type":"Question",
-        "name":"¿Trabajan en todo AMBA?",
-        "acceptedAnswer":{"@type":"Answer","text":"Sí, atendemos Capital y GBA con base en Vicente López."}
-      },
-      {
-        "@type":"Question",
-        "name":"¿Pueden mejorar mi WiFi empresarial?",
-        "acceptedAnswer":{"@type":"Answer","text":"Diseñamos y optimizamos redes WiFi con estudios de cobertura y roaming."}
-      },
-      {
-        "@type":"Question",
-        "name":"¿Instalan y administran firewalls y VPN?",
-        "acceptedAnswer":{"@type":"Answer","text":"Sí, implementamos firewalls de próxima generación, segmentación y acceso remoto seguro (VPN)."}
-      }
+      {"@type":"Question","name":"¿Trabajan en todo AMBA?","acceptedAnswer":{"@type":"Answer","text":"Sí, atendemos Capital y GBA con base en Vicente López."}},
+      {"@type":"Question","name":"¿Pueden mejorar mi WiFi empresarial?","acceptedAnswer":{"@type":"Answer","text":"Diseñamos y optimizamos redes WiFi con estudios de cobertura y roaming."}},
+      {"@type":"Question","name":"¿Instalan y administran firewalls y VPN?","acceptedAnswer":{"@type":"Answer","text":"Sí, implementamos firewalls de próxima generación, segmentación y acceso remoto seguro (VPN)."}}
     ]
   }
   </script>
@@ -89,8 +77,8 @@
   <!-- Header -->
   <header class="header">
     <div class="container header-inner">
-      <a href="/" class="brand" aria-label="Redes Seguras - Inicio">
-        <img src="/static/img/logo.svg" alt="Redes Seguras" class="logo" />
+      <a href="index.html" class="brand" aria-label="Redes Seguras - Inicio">
+        <img src="static/img/logo.svg" alt="Redes Seguras" class="logo" />
       </a>
       <nav class="nav" aria-label="Principal">
         <a href="#servicios">Servicios</a>
@@ -114,7 +102,7 @@
     </div>
   </header>
 
-  <!-- HERO con overlay para contraste -->
+  <!-- HERO -->
   <section class="hero" role="banner" aria-label="Servicios de redes y seguridad">
     <div class="hero-media" aria-hidden="true" role="img"></div>
     <div class="hero-overlay"></div>
@@ -175,7 +163,7 @@
     </div>
   </section>
 
-  <!-- Clientes / testimonios -->
+  <!-- Clientes -->
   <section id="clientes" class="section">
     <div class="container">
       <h2>Confían en nosotros</h2>
@@ -219,13 +207,14 @@
         Tel: <a href="tel:+541170292195">+54 11 7029-2195</a>
       </div>
       <nav class="footer-nav" aria-label="Enlaces legales">
-        <a href="/politica-privacidad.html">Política de Privacidad</a>
-        <a href="/terminos.html">Términos</a>
-        <a href="/sitemap.xml">Sitemap</a>
+        <a href="politica-privacidad.html">Política de Privacidad</a>
+        <a href="terminos.html">Términos</a>
+        <a href="sitemap.xml">Sitemap</a>
       </nav>
     </div>
   </footer>
 
-  <script src="/static/js/main.js" defer></script>
+  <!-- JS (RUTA RELATIVA) -->
+  <script src="static/js/main.js" defer></script>
 </body>
 </html>
