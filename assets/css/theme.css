@@ -1,41 +1,82 @@
-/* Redes Seguras — THEME (solo CSS) */
+/* =========================
+   Redes Seguras — THEME
+   - Variables y temas (light/dark)
+   - SOLO CSS
+========================= */
+
+/* Base tipográfica + utilidades mínimas (comunes) */
 :root{
-  /* Tipografía */
   --font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 
-  /* Colores */
-  --text: #e7ebf6;
-  --muted: rgba(255,255,255,.72);
+  /* Layout */
+  --radius: 14px;
+  --sp-2: 12px;
+
+  /* Sombra */
+  --shadow-1: 0 6px 18px rgba(0,0,0,.12);
+  --shadow-2: 0 10px 26px rgba(0,0,0,.18);
+}
+
+/* ===== Tema CLARO (default) ===== */
+:root,
+html[data-theme="light"]{
+  /* Superficie y textos */
+  --bg: #f7f9fc;
+  --bg-alt: #eef3fb;
+  --text: #0e1a2a;
+  --muted: #3a4a62;
+
+  /* Marca viva (azul/teal) */
+  --brand: #2b6df6;   /* azul vivo */
+  --brand-2: #00bfa6; /* teal brillante */
+  --brand-3: #8a63d2; /* violeta de acento */
+
+  /* Contenedores */
   --white: #ffffff;
+  --border: rgba(10, 27, 51, .12);
+  --card: rgba(255,255,255, .9);
+  --glass: rgba(255,255,255,.7);
+}
+
+/* ===== Tema OSCURO ===== */
+html[data-theme="dark"]{
+  --bg: #0a1123;
+  --bg-alt: #0c142b;
+  --text: #e7ebf6;
+  --muted: rgba(231,235,246,.72);
+
   --brand: #3a7afe;
   --brand-2: #00e395;
   --brand-3: #8a63d2;
 
-  /* Superficie */
-  --border: rgba(255,255,255,.08);
-  --card: rgba(255,255,255,.04);
+  --white: #ffffff;
+  --border: rgba(255,255,255,.10);
+  --card: rgba(255,255,255,.06);
+  --glass: rgba(8,12,24,.7);
+}
 
-  /* Radios y espaciados */
-  --radius: 14px;
-  --sp-2: 12px;
+/* Respeto preferencia del SO si no hay preferencia guardada */
+@media (prefers-color-scheme: dark){
+  html:not([data-theme="light"]):not([data-theme="dark"]){
+    color-scheme: dark;
+  }
+}
+@media (prefers-color-scheme: light){
+  html:not([data-theme="light"]):not([data-theme="dark"]){
+    color-scheme: light;
+  }
 }
 
 /* Base tipográfica */
 html{scroll-behavior:smooth}
-body{font-family:var(--font-family); color:var(--text)}
-h1,h2,h3,h4,h5,h6{margin:0 0 .5rem; line-height:1.15}
-h1{font-size:clamp(2rem, 1rem + 2.5vw, 3rem); font-weight:800}
-h2{font-size:clamp(1.5rem, 1rem + 1.6vw, 2.25rem); font-weight:700}
-h3{font-size:clamp(1.25rem, 1rem + .9vw, 1.5rem); font-weight:700}
-p{margin:.5rem 0 1rem; color:var(--muted)}
-a{color:var(--text); text-decoration:none}
-a:hover{color:var(--white)}
+body{
+  font-family:var(--font-family);
+  color:var(--text);
+  background: var(--bg);
+}
 
 /* Utilidades */
 .img-fluid{max-width:100%; height:auto}
 .rounded{border-radius:var(--radius)}
 .text-center{text-align:center}
 .hide{display:none !important}
-
-/* Fallback mínimo */
-@media all{ body{background-color:#0a1123} }
