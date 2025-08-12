@@ -1,4 +1,4 @@
-// Preferencia inicial: respeta el sistema, permite override con botón
+// Respeta el sistema; permite override con el botón
 (function initTheme(){
   const root = document.documentElement;
   const saved = localStorage.getItem('theme'); // 'light' | 'dark' | null
