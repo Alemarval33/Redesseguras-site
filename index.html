@@ -3,127 +3,229 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Redes Seguras | Redes y Seguridad IT en Buenos Aires (AMBA)</title>
-  <meta name="description" content="Redes Seguras: WiFi empresarial, cableado estructurado, firewalls, VPN y CCTV. Atendemos AMBA con base en Vicente López. Consultá por WhatsApp o llamanos al +54 11 7029-2195." />
+  <title>Redes Seguras | Redes, WiFi, Firewalls y CCTV en AMBA</title>
+  <meta name="description" content="Redes Seguras: diseño e instalación de redes, WiFi empresarial, firewalls, VPN y CCTV. Servicio profesional para pymes en AMBA. Consultá por WhatsApp: +54 11 7029-2195." />
 
-  <!-- Fuentes y estilos -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.tu-dominio.com/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Redes Seguras | Redes, WiFi, Firewalls y CCTV en AMBA" />
+  <meta property="og:description" content="Diseño e instalación de redes, WiFi empresarial, firewalls, VPN y CCTV. Atención a pymes en AMBA." />
+  <meta property="og:url" content="https://www.tu-dominio.com/" />
+  <meta property="og:image" content="https://www.tu-dominio.com/static/img/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon / Manifest -->
+  <link rel="icon" href="/static/favicon.ico">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Fuentes (seria y legible) -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="./assets/css/theme.css?v=2" />
-  <link rel="stylesheet" href="./assets/css/styles.css?v=2" />
+  <link href="/static/css/styles.css" rel="stylesheet">
 
-  <link rel="icon" href="./img/logo.svg" type="image/svg+xml" />
-  <link rel="canonical" href="https://redesseguras.com.ar/" />
-  <link rel="manifest" href="./assets/manifest.webmanifest" />
-  <meta name="theme-color" content="#3a7afe" />
+  <!-- Robots -->
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0a2a4a" />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- FAQ + LocalBusiness para SEO e IA -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Redes Seguras",
+    "image":"https://www.tu-dominio.com/static/img/og-image.jpg",
+    "url":"https://www.tu-dominio.com/",
+    "telephone":"+54 11 7029-2195",
+    "priceRange":"$$",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Vicente López",
+      "addressRegion":"Buenos Aires",
+      "addressCountry":"AR"
+    },
+    "areaServed":"AMBA",
+    "description":"Redes, WiFi empresarial, cableado estructurado, firewalls, VPN y CCTV para pymes."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"¿Trabajan en todo AMBA?",
+        "acceptedAnswer":{"@type":"Answer","text":"Sí, atendemos Capital y GBA con base en Vicente López."}
+      },
+      {
+        "@type":"Question",
+        "name":"¿Pueden mejorar mi WiFi empresarial?",
+        "acceptedAnswer":{"@type":"Answer","text":"Diseñamos y optimizamos redes WiFi con estudios de cobertura y roaming."}
+      },
+      {
+        "@type":"Question",
+        "name":"¿Instalan y administran firewalls y VPN?",
+        "acceptedAnswer":{"@type":"Answer","text":"Sí, implementamos firewalls de próxima generación, segmentación y acceso remoto seguro (VPN)."}
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <!-- Topbar -->
+  <!-- Barra superior contacto rápido -->
   <div class="topbar">
-    <div class="container topbar-inner">
-      <a class="tel" href="tel:+541170292195">📞 +54 11 7029-2195</a>
-      <a class="wa" href="https://wa.me/541170292195?text=Hola%2C%20quisiera%20cotizar%20mi%20red" target="_blank" rel="noopener">WhatsApp directo</a>
-      <span class="loc">📍 Vicente López, Buenos Aires (AMBA)</span>
+    <div class="container">
+      <span>Atendemos AMBA — Respuesta en el día</span>
+      <a class="topbar-link" href="tel:+541170292195" aria-label="Llamar por teléfono">+54 11 7029-2195</a>
     </div>
   </div>
 
   <!-- Header -->
-  <header class="site-header">
-    <div class="container nav">
-      <a href="./index.html" class="brand" aria-label="Redes Seguras – inicio">
-        <img src="./img/logo.svg" alt="Redes Seguras" class="logo" />
-        <span>REDES SEGURAS</span>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="brand" aria-label="Redes Seguras - Inicio">
+        <img src="/static/img/logo.svg" alt="Redes Seguras" class="logo" />
       </a>
-
-      <nav id="mainNav" class="menu">
-        <a href="./servicios.html">Servicios</a>
-        <a href="./nosotros.html">Nosotros</a>
-        <a href="./galeria.html">Galería</a>
-        <a href="./contacto.html" class="btn btn-sm">Contacto</a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#por-que">Por qué elegirnos</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#contacto">Contacto</a>
       </nav>
-
-      <!-- Botón de tema -->
-      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Cambiar tema">
-        ☀️ Claro <span class="dot"></span>
-      </button>
-
-      <button class="hamburger" aria-label="Abrir menú" id="btnMenu" aria-expanded="false">☰</button>
+      <div class="header-actions">
+        <button id="themeToggle" class="btn ghost" aria-label="Cambiar tema">🌓</button>
+        <a class="btn primary" href="https://wa.me/541170292195?text=Hola%20Redes%20Seguras%2C%20necesito%20asesoramiento" aria-label="WhatsApp">
+          <span class="wa-ico" aria-hidden="true">
+            <!-- WhatsApp SVG -->
+            <svg viewBox="0 0 32 32" width="18" height="18" role="img">
+              <path d="M19.11 17.19c-.29-.15-1.68-.83-1.94-.92-.26-.1-.45-.15-.65.15-.2.29-.75.92-.92 1.11-.17.2-.34.22-.63.07-.29-.15-1.21-.45-2.31-1.45-.85-.76-1.42-1.69-1.59-1.98-.17-.29-.02-.45.13-.6.14-.14.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.52-.07-.15-.65-1.56-.9-2.14-.24-.58-.49-.5-.65-.5-.17 0-.37-.02-.57-.02-.2 0-.52.07-.79.37-.27.29-1.04 1.01-1.04 2.46 0 1.45 1.07 2.86 1.22 3.06.15.2 2.1 3.21 5.1 4.5.71.31 1.27.5 1.71.64.72.23 1.37.2 1.89.12.58-.09 1.68-.69 1.92-1.35.24-.66.24-1.22.17-1.35-.07-.12-.26-.2-.55-.34z" fill="currentColor"/>
+              <path d="M26.94 5.06A13.92 13.92 0 0 0 16 .03C7.19.03.03 7.18.03 16a15.9 15.9 0 0 0 2.18 8.04L.03 32l8.14-2.12A15.88 15.88 0 0 0 16 31.97C24.81 31.97 31.97 24.82 31.97 16a15.91 15.91 0 0 0-5.03-10.94zM16 29.09a13.03 13.03 0 0 1-6.64-1.81l-.48-.29-4.83 1.26 1.28-4.7-.32-.48A12.97 12.97 0 1 1 16 29.09z" fill="currentColor"/>
+            </svg>
+          </span>
+          Consultar
+        </a>
+      </div>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-bg" aria-hidden="true">
-      <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=1600&q=80" alt="">
-      <div class="hero-gradient"></div>
-    </div>
-    <div class="container hero-inner">
-      <div class="hero-copy">
-        <h1 class="grad-text">Redes confiables para que tu negocio no se detenga</h1>
-        <p>WiFi empresarial de alta densidad, cableado certificado, firewalls &amp; VPN y CCTV. Atendemos <strong>AMBA</strong> con base en <strong>Vicente López</strong>. Consultá por <strong>WhatsApp</strong> o <strong>llamado directo</strong>.</p>
-        <div class="cta-group">
-          <a class="btn btn-primary" href="https://wa.me/541170292195?text=Hola%2C%20quisiera%20cotizar%20mi%20red" target="_blank" rel="noopener">Escribir por WhatsApp</a>
-          <a class="btn btn-outline" href="tel:+541170292195">Llamar ahora</a>
-        </div>
-        <ul class="trustbar">
-          <li><span class="badge">20+ años</span> de experiencia</li>
-          <li><span class="badge">SLA 24/7</span> soporte crítico</li>
-          <li><span class="badge">Buenas prácticas</span> y documentación</li>
-          <li><span class="badge">Respuesta</span> en el día</li>
-        </ul>
+  <!-- HERO con overlay para contraste -->
+  <section class="hero" role="banner" aria-label="Servicios de redes y seguridad">
+    <div class="hero-media" aria-hidden="true" role="img"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Redes confiables para empresas exigentes</h1>
+      <p>WiFi empresarial, cableado, firewalls, VPN y CCTV. Diseño, instalación y soporte continuo con SLA.</p>
+      <div class="actions">
+        <a class="btn primary" href="#contacto">Solicitar evaluación</a>
+        <a class="btn secondary" href="#servicios">Ver servicios</a>
       </div>
+      <ul class="trust">
+        <li>✔ Diagnóstico en sitio</li>
+        <li>✔ Garantía por escrito</li>
+        <li>✔ Respuesta en el día</li>
+      </ul>
     </div>
   </section>
 
   <!-- Servicios -->
   <section id="servicios" class="section">
     <div class="container">
-      <h2 class="section-title">Servicios</h2>
+      <h2>Servicios</h2>
       <div class="grid cards-3">
-        <article class="card reveal"><div class="icon">📶</div><h3>WiFi empresarial</h3><p>Encuestas de sitio, mapas de calor, roaming sin cortes, invitados y segmentación por VLAN. QoS para voz, video y POS.</p></article>
-        <article class="card reveal"><div class="icon">🧩</div><h3>Cableado estructurado</h3><p>Cat6/Cat6A con certificación de enlaces. Racks, patch panels y orden profesional para crecer sin dolores.</p></article>
-        <article class="card reveal"><div class="icon">🛡️</div><h3>Firewalls &amp; VPN</h3><p>UTM, políticas de acceso, IDS/IPS y VPN site-to-site o remoto (MFA). Auditoría y registros centralizados.</p></article>
-        <article class="card reveal"><div class="icon">🎥</div><h3>CCTV y cámaras IP</h3><p>Grabación en red, acceso móvil y retención acorde a normativa. Integración con tu infraestructura.</p></article>
-        <article class="card reveal"><div class="icon">📈</div><h3>Monitoreo &amp; soporte</h3><p>Alertas proactivas, mantenimiento preventivo y SLA con tiempos de respuesta garantizados.</p></article>
-        <article class="card reveal"><div class="icon">🧭</div><h3>Consultoría IT</h3><p>Relevamientos, auditorías de seguridad y roadmaps priorizados con quick wins y objetivos de mediano plazo.</p></article>
-      </div>
-      <div class="cta-center">
-        <a class="btn btn-primary" href="https://wa.me/541170292195" target="_blank" rel="noopener">Pedir cotización por WhatsApp</a>
-        <a class="btn btn-outline" href="tel:+541170292195">Llamar ahora</a>
+        <article class="card">
+          <h3>WiFi Empresarial</h3>
+          <p>Estudios de cobertura, diseño de celdas y roaming. Control de acceso y QoS.</p>
+        </article>
+        <article class="card">
+          <h3>Firewalls & VPN</h3>
+          <p>NGFW, segmentación de red, IDS/IPS y acceso remoto seguro para tu equipo.</p>
+        </article>
+        <article class="card">
+          <h3>Cableado & CCTV</h3>
+          <p>Cableado certificado, racks y cámaras con monitoreo y almacenamiento seguro.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Resultados -->
-  <section class="section alt">
+  <!-- Por qué elegirnos -->
+  <section id="por-que" class="section alt">
     <div class="container">
-      <h2 class="section-title">Resultados que importan</h2>
+      <h2>Por qué elegirnos</h2>
+      <div class="grid cols-3">
+        <div>
+          <h4>Experiencia</h4>
+          <p>+10 años en pymes y entornos críticos.</p>
+        </div>
+        <div>
+          <h4>Transparencia</h4>
+          <p>Presupuestos claros y garantía por escrito.</p>
+        </div>
+        <div>
+          <h4>Soporte</h4>
+          <p>Monitoreo y SLA acorde a tu necesidad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clientes / testimonios -->
+  <section id="clientes" class="section">
+    <div class="container">
+      <h2>Confían en nosotros</h2>
       <div class="grid cards-3">
-        <article class="case reveal"><h3>Retail multi-sucursal</h3><p>Roaming optimizado y VLAN. <em>+65% estabilidad</em> y <em>-40% tickets</em> por caídas.</p></article>
-        <article class="case reveal"><h3>PyME logística</h3><p>VPN y UTM con perfiles. <em>Acceso seguro</em> y <em>trazabilidad</em> de usuarios.</p></article>
-        <article class="case reveal"><h3>Oficina médica</h3><p>Invitados aislados y CCTV IP. <em>Privacidad</em> y <em>auditoría</em> mejoradas.</p></article>
+        <article class="card">
+          <p>“Mejoraron la cobertura WiFi en todas las oficinas, sin cortes.”</p>
+          <span class="meta">Administrador de IT – PyME Retail</span>
+        </article>
+        <article class="card">
+          <p>“Implementaron VPN y acceso remoto seguro en 48 horas.”</p>
+          <span class="meta">Gerencia – Servicios Financieros</span>
+        </article>
+        <article class="card">
+          <p>“Resolvieron interferencias y cablearon el depósito con certificación.”</p>
+          <span class="meta">Operaciones – Logística</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta" id="contacto">
+    <div class="container cta-inner">
+      <div>
+        <h2>¿Agendamos una evaluación sin costo?</h2>
+        <p>Contanos tu situación y definimos el plan de acción.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn primary" href="https://wa.me/541170292195?text=Hola%20Redes%20Seguras%2C%20necesito%20asesoramiento">Escribir por WhatsApp</a>
+        <a class="btn secondary" href="tel:+541170292195">Llamar ahora</a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Redes Seguras — Vicente López, Buenos Aires (AMBA).</p>
-      <nav class="footer-nav">
-        <a href="./servicios.html">Servicios</a>
-        <a href="./nosotros.html">Nosotros</a>
-        <a href="./contacto.html">Contacto</a>
+      <div>
+        <strong>Redes Seguras</strong><br/>
+        Vicente López, Buenos Aires (AMBA)<br/>
+        Tel: <a href="tel:+541170292195">+54 11 7029-2195</a>
+      </div>
+      <nav class="footer-nav" aria-label="Enlaces legales">
+        <a href="/politica-privacidad.html">Política de Privacidad</a>
+        <a href="/terminos.html">Términos</a>
+        <a href="/sitemap.xml">Sitemap</a>
       </nav>
     </div>
   </footer>
 
-  <a class="wa-fab" href="https://wa.me/541170292195?text=Hola%2C%20quisiera%20cotizar%20mi%20red" target="_blank" rel="noopener" aria-label="WhatsApp"></a>
-
-  <!-- JS -->
-  <script src="./assets/js/main.js?v=2"></script>
+  <script src="/static/js/main.js" defer></script>
 </body>
 </html>
