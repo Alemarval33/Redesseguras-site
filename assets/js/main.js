@@ -26,3 +26,26 @@ if ('IntersectionObserver' in window && toReveal.length) {
   }, { threshold: 0.18 });
   toReveal.forEach(el => io.observe(el));
 }
+
+// Lightbox simple para la galería
+(function(){
+  const imgs = document.querySelectorAll('.gallery-grid img');
+  if (!imgs.length) return;
+  imgs.forEach(img => {
+    img.addEventListener('click', () => {
+      const src = img.getAttribute('src');
+      const alt = img.getAttribute('alt') || '';
+      const overlay = document.createElement('div');
+      overlay.className = 'lightbox-backdrop fade-in';
+      overlay.innerHTML = '<img class="lightbox-img" src="'+src+'" alt="'+alt+'">';
+      const close = () => {
+        document.removeEventListener('keydown', onKey);
+        overlay.remove();
+      };
+      const onKey = (e) => { if (e.key === 'Escape') close(); };
+      overlay.addEventListener('click', close);
+      document.addEventListener('keydown', onKey);
+      document.body.appendChild(overlay);
+    });
+  });
+})();
