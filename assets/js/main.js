@@ -5,7 +5,6 @@
   if (saved === 'light' || saved === 'dark') {
     root.setAttribute('data-theme', saved);
   }
-  // Label inicial del botón si existe
   const btn = document.getElementById('themeToggle');
   const setLabel = () => {
     const mode = root.getAttribute('data-theme') || 'light';
